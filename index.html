@@ -1,28 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kavkaz Group - Home</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Kavkaz Group</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-
-    <section class="content">
-        <h2>Welcome to Kavkaz Group</h2>
-        <p>We are a professional team dedicated to delivering the best services in our field.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kavkaz Group</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      body {
+        background-color: #000;
+        color: #FFD700;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
+      .fade-in {
+        animation: fadeIn 2s ease-in;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+  </head>
+  <body class="antialiased">
+    <!-- Hero Section -->
+    <section class="text-center py-24 fade-in">
+      <h1 class="text-4xl md:text-6xl font-semibold uppercase tracking-wide">Kavkaz Group</h1>
+      <p class="mt-4 text-lg md:text-2xl italic">By Tsikarishvili Group, LLC</p>
+      <p class="mt-6 text-xl">Global Vision. Strategic Finance. Timeless Value.</p>
+      <a href="#contact" class="mt-10 inline-block border border-yellow-500 px-6 py-3 rounded-full hover:bg-yellow-500 hover:text-black transition">Get in Touch</a>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Kavkaz Group. All rights reserved.</p>
+    <!-- About Section -->
+    <section class="max-w-4xl mx-auto text-center py-16 px-4 fade-in">
+      <h2 class="text-2xl mb-4">About Us</h2>
+      <p class="text-base md:text-lg leading-relaxed">
+        Kavkaz Group, operating under Tsikarishvili Group, LLC, is a strategic financial consultancy with global reach. Our founder’s background in mortgage banking and leadership in three successful startups forms the foundation of our advisory strength. We connect capital with opportunity across sectors, from finance to international trade and beyond.
+      </p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="max-w-5xl mx-auto py-16 px-6 grid gap-8 md:grid-cols-2 fade-in">
+      <div class="border border-yellow-500 p-6 rounded-xl">
+        <h3 class="text-xl font-medium mb-2">Financial Consulting</h3>
+        <p>Strategic planning, investment guidance, and capital structuring.</p>
+      </div>
+      <div class="border border-yellow-500 p-6 rounded-xl">
+        <h3 class="text-xl font-medium mb-2">Construction Advisory</h3>
+        <p>International project consultation through overseas partnerships.</p>
+      </div>
+      <div class="border border-yellow-500 p-6 rounded-xl">
+        <h3 class="text-xl font-medium mb-2">Non-Profit Strategy</h3>
+        <p>Compliance, governance, and impactful funding pathways.</p>
+      </div>
+      <div class="border border-yellow-500 p-6 rounded-xl">
+        <h3 class="text-xl font-medium mb-2">Wholesale Trade</h3>
+        <p>Brokerage and advisory services for international commodities and goods.</p>
+      </div>
+      <div class="border border-yellow-500 p-6 rounded-xl md:col-span-2">
+        <h3 class="text-xl font-medium mb-2">Startup Acceleration</h3>
+        <p>Mentorship, early-stage funding navigation, and scalable growth strategy.</p>
+      </div>
+    </section>
+
+    <!-- Track Record Section -->
+    <section class="max-w-3xl mx-auto text-center py-16 px-6 fade-in">
+      <h2 class="text-2xl mb-4">Proven Track Record</h2>
+      <p>
+        From early venture success to financial structuring for multi-national projects, our portfolio is grounded in experience and execution. We are not just consultants — we are stakeholders in excellence.
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="text-center py-20 px-4 fade-in">
+      <h2 class="text-2xl mb-6">Contact Us</h2>
+      <p class="mb-4">Email: <a href="mailto:concierge@kavkazgroup.net" class="underline">info@kavkazgroup.com</a></p>
+      <p class="mb-10">Phone: (XXX) XXX-XXXX</p>
+      <a href="mailto:concierge@kavkazgroup.net" class="inline-block border border-yellow-500 px-6 py-3 rounded-full hover:bg-yellow-500 hover:text-black transition">Send an Email</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-sm py-6 border-t border-yellow-500">
+      <p>&copy; 2025 Kavkaz Group | Tsikarishvili Group, LLC | All rights reserved.</p>
     </footer>
-</body>
+  </body>
 </html>
